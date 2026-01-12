@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Trophy, Share2, Zap, Clock, Target, Award } from 'lucide-react';
 
 const CREATOR_ENTRY = {
-  name: "Ashish Garg",
+  name: "Harshal Singh Energy",
   avgTime: 200,
-  date: "12/01/2026",
+  date: "12/01/2027",
   creator: true,
 };
 export default function ReactionGame() {
