@@ -413,19 +413,19 @@ export default function ReactionGame() {
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span className="text-red-400">🔥 LEGENDARY</span>
-                    <span className="text-gray-400">&lt; 200ms</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-purple-400">⚡ ELITE</span>
-                    <span className="text-gray-400">&lt; 250ms</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-400">🎯 MASTER</span>
                     <span className="text-gray-400">&lt; 300ms</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-green-400">🌟 EXPERT</span>
+                    <span className="text-purple-400">⚡ ELITE</span>
                     <span className="text-gray-400">&lt; 350ms</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-blue-400">🎯 MASTER</span>
+                    <span className="text-gray-400">&lt; 400ms</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-green-400">🌟 EXPERT</span>
+                    <span className="text-gray-400">&lt; 450ms</span>
                   </div>
                 </div>
               </div>
