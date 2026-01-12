@@ -102,7 +102,7 @@ export default function ReactionGame() {
   const startRound = () => {
     setGameState('waiting');
     setTargetPosition(getRandomPosition());
-    const delay = Math.random() * 3000 + 2000;
+    const delay = Math.random() * 1500 + 1000;
 
     timeoutRef.current = setTimeout(() => {
       setGameState('click');
