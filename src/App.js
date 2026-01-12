@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Trophy, Share2, Zap, Clock, Target, Award } from 'lucide-react';
 
 const CREATOR_ENTRY = {
-  name: "Harshal Singh Energy",
-  avgTime: 200,
-  date: "12/01/2027",
+  name: "Ashish Garg",
+  avgTime: 354,
+  date: "12/01/2026",
   creator: true,
 };
 export default function ReactionGame() {
@@ -180,11 +180,11 @@ export default function ReactionGame() {
 
   const getRank = () => {
     const avgTime = (MAX_ATTEMPTS * 1000 - totalScore) / MAX_ATTEMPTS;
-    if (avgTime < 200) return { text: '🔥 LEGENDARY', color: 'text-red-500' };
-    if (avgTime < 250) return { text: '⚡ ELITE', color: 'text-purple-500' };
-    if (avgTime < 300) return { text: '🎯 MASTER', color: 'text-blue-500' };
-    if (avgTime < 350) return { text: '🌟 EXPERT', color: 'text-green-500' };
-    if (avgTime < 400) return { text: '👍 SKILLED', color: 'text-yellow-500' };
+    if (avgTime < 400) return { text: '🔥 LEGENDARY', color: 'text-red-500' };
+    if (avgTime < 450) return { text: '⚡ ELITE', color: 'text-purple-500' };
+    if (avgTime < 500) return { text: '🎯 MASTER', color: 'text-blue-500' };
+    if (avgTime < 550) return { text: '🌟 EXPERT', color: 'text-green-500' };
+    if (avgTime < 600) return { text: '👍 SKILLED', color: 'text-yellow-500' };
     return { text: '🎮 ROOKIE', color: 'text-gray-500' };
   };
 
@@ -277,10 +277,10 @@ export default function ReactionGame() {
                           <div className="text-6xl font-bold text-green-400 mb-2">{reactionTime}ms</div>
                           <div className="text-2xl text-yellow-400 mb-2">+{score} points</div>
                           <p className="text-gray-300">
-                            {reactionTime < 200 ? '🔥 Lightning fast!' :
-                             reactionTime < 250 ? '⚡ Excellent!' :
-                             reactionTime < 300 ? '🎯 Great!' :
-                             reactionTime < 350 ? '👍 Good!' :
+                            {reactionTime < 400 ? '🔥 Lightning fast!' :
+                             reactionTime < 450 ? '⚡ Excellent!' :
+                             reactionTime < 500 ? '🎯 Great!' :
+                             reactionTime < 550 ? '👍 Good!' :
                              '😅 Keep practicing!'}
                           </p>
                         </>
